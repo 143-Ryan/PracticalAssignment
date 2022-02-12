@@ -43,7 +43,7 @@ namespace PracticalAssignment
 
             //To send a GET request to Google along with the response and Secret key.
             HttpWebRequest req = (HttpWebRequest)WebRequest.Create
-           (" https://www.google.com/recaptcha/api/siteverify?secret=6LcGlUUeAAAAAAv8evUNFpCeMwXKpC_HMRT_otZb &response=" + captchaResponse);
+           (" https://www.google.com/recaptcha/api/siteverify?secret= &response=" + captchaResponse);
 
 
             try
@@ -78,6 +78,11 @@ namespace PracticalAssignment
             {
                 throw ex;
             }
+        }
+
+        protected void Go_reg_btn(object sender, EventArgs e)
+        {
+            Response.Redirect("Registration.aspx");
         }
 
         protected void Login_btn_Submit_Click(object sender, EventArgs e)

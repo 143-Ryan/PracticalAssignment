@@ -8,7 +8,7 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>&quot;Successfully Logged in I think???&quot;<br />
+        <div><br />
             <br />
             <asp:Label ID="lblMessage" runat="server" EnableViewState="false" /><br />
             <br />
